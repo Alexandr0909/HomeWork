@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+</head>
+
+<body align="left" bgcolor="#ccffcc">
+
+    <h1>Зделать заказ</h1>
+    <hr width="25%" align="left">
+    <hr width="30%" align="left">
+    <hr width="35%" align="left">
+    <hr width="40%" align="left">
+
+    <label><strong>Выбрать пиццу:</strong>
+        <input type="text" name="name" placeholder="Pizza" list="view">
+    </label>
+    <datalist id="view">
+        <option value="Биф тейсти"></option>
+        <option value="Лосось и вяленые томаты"></option>
+        <option value="Буженина макс-тейсти"></option>
+        <option value="Ранч пицца"></option>
+        <option value="Цыпленок барбекю"></option>
+        <option value="Баварская"></option>
+        <option value="Гавайская"></option>
+        <option value="Грибная"></option>
+        <option value="Сырный цыпленок"></option>
+        <option value="Деревенская"></option>
+        <option value="Копченый цыпленок и охотничьи колбаски"></option>
+        <option value="Колбаски барбекю"></option>
+        <option value="Чесночный цыпленок"></option>
+        <option value="Французский цыпленок"></option>
+        <option value="Салями, ветчина и грибы"></option>
+        <option value="Мясная"></option>
+    </datalist>
+
+    <br>
+
+    <lable>
+        <strong>Количество пицц:</strong>
+        <input type="number" min="1" max="101">
+    </lable>
+
+    <br>
+
+    <lable>
+        <strong>Размер:</strong>
+        <input type="radio" name="sm" value="radio0">22 См.
+        <input type="radio" name="sm" value="radio1">30 См.
+        <input type="radio" name="sm" value="radio3">36 См.
+    </lable>
+
+
+    <br>
+
+    <label>
+        <STRONG>Тесто:</STRONG>
+        <input type="terxt" name="bort" list="bort">
+    </label>
+    <datalist id="bort">
+        <option value="Классика"></option>
+        <option value="Ультратонкое"></option>
+        <option value="Толстое"></option>
+    </datalist>
+
+    <br>
+
+    <label>
+        <strong>Борт:</strong>
+        <input type="radio" name="sm0" value="radio4">Хот-Дог борт.
+        <input type="radio" name="sm0" value="radio5">Сырный борт.
+    </label>
+
+    <br>
+
+    <hr width="40%" align="left">
+    <hr width="35%" align="left">
+    <hr width="30%" align="left">
+    <hr width="25%" align="left">
+
+    <label>
+        <big>Ваше имя:</big>
+        <input type="text" name="name" placeholder="Your name">
+        <br>
+
+        <label>
+            <big>Ваш адрес:</big>
+            <input type="text" name="address" placeholder="">
+        </label>
+
+        <br>
+
+        <label>
+            <big>Номер телефона:</big>
+            <input type="tel" name="number" placeholder="+375 " list="tel">
+        </label>
+        <datalist id="tel">
+            <option value="+375 25"></option>
+            <option value="+375 33"></option>
+            <option value="+375 44"></option>
+            <option value="+375 29"></option>
+            <option value="+375 17"></option>
+        </datalist>
+
+        <br>
+
+        <textarea name="text" cols="40" rows="5">Хачю пиццу</textarea>
+
+        <input type="submit" placeholder="Зделать заказ">
+
+        <hr width="25%" align="left">
+        <hr width="30%" align="left">
+        <hr width="35%" align="left">
+        <hr width="40%" align="left">
+
+        <label for=""> Оцените
+            <br>
+            <input type="radio" name="sm1">✯
+            <br>
+            <input type="radio" name="sm1">✯✯
+            <br>
+            <input type="radio" name="sm1">✯✯✯
+            <br>
+            <input type="radio" name="sm1">✯✯✯✯
+            <br>
+            <input type="radio" name="sm1">✯✯✯✯✯
+            <br>
+
+        </label>
+
+</body>
+
+</html>

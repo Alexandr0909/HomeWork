@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant</title>
+</head>
+
+<body align="left" bgcolor="#ccfff5">
+
+    <h1>Забронировать стол</h1>
+
+    <h3>Контактная информация</h3>
+    <hr width="15%">
+
+    <label>Ваше имя:
+        <input type="text" placeholder="Your name" required />
+    </label>
+
+    <br>
+
+    <label>Номер телефона:
+        <input type="tel" name="number" placeholder="+375 " list="tel" requiredrequired />
+    </label>
+    <datalist id="tel">
+        <option value="+375 25"></option>
+        <option value="+375 33"></option>
+        <option value="+375 44"></option>
+        <option value="+375 29"></option>
+        <option value="+375 17"></option>
+    </datalist>
+
+    <br>
+
+    <label for="visit">Дата посещения:</label>
+    <input type="date" id="visit" name="visit" required />
+
+    <br>
+
+    <label for="appt">Время посещения:</label>
+    <input type="time" id="appt" name="appt" required />
+
+    <br>
+
+    <lable>Кол-во гостей:
+        <input type="number" min="1" max="101" required />
+    </lable>
+
+    <br>
+
+    <label>Любимый вид кухени:
+        <input type="text" name="kitchen" list="views0" required />
+    </label>
+    <datalist id="views0">
+        <option value="Европейская кухня"></option>
+        <option value="Японская кухня"></option>
+        <option value="Китайская кухня"></option>
+        <option value="Грузинская кухня"></option>
+        <option value="Ирландская кухня"></option>
+    </datalist>
+
+    <br>
+
+    <textarea name="text" cols="40"
+        rows="5">Пожелания (не обязательно): летняя терраса, у окна, на диванчиках и т.п.</textarea>
+
+    <h3>Оценка нащего ресторана</h3>
+    <hr width="25%">
+
+    <lable> Почему вы выбрали наще ресторан:
+        <br>
+        <input type="radio" name="sm0" value="radio0" />Недалеко от дома/работы.
+        <br>
+        <input type="radio" name="sm" value="radio1" />Увидел рекламу.
+        <br>
+        <input type="radio" name="sm" value="radio3" />Посоветовали.
+        <br>
+        <input type="radio" name="sm1" value="radio3" />Оптимальное соотношение цены и качества.
+        <br>
+        <h3>Вы будете рекомендовать наш ресторан знакомым ?</h3>
+        <hr width="25%">
+        <input type="radio" name="sm2" value="radio1" /> Да.
+        <br>
+        <input type="radio" name="sm2" value="radio3" />Конечно👍🏻!!!
+        <br>
+        <input type="submit" placeholder="Отправит" />
+
+    </lable>
+
+
+</body>
+
+</html>
