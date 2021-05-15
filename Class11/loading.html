@@ -46,7 +46,8 @@
             height: 350px;
             background-color: #e0e0e0;
             border-radius: 10px 10px 3px 3px;
-            border: 3px solid #003fc7;
+            border: 3px solid #1e5bdf;
+            box-shadow: 4px 4px 5px 5px;
             position: absolute;
             top: 35%;
             right: 30%;
@@ -55,9 +56,10 @@
         .hat {
             position: relative;
             width: 100%;
-            height: 7%;
-            background-color: #003fc7;
+            height: 9%;
+            background-color: #1e5bdf;
             display: inline-block;
+
         }
 
         /* .band {
@@ -90,13 +92,42 @@
             display: inline-block;
         } */
 
-        button {
-            width: 20px;
-            height: 20px;
-            border: 1px solid #e0e0e0;
-            background-color: #006eff;
-            border-radius: 5px;
-            
+        .blue {
+            background: #1a60f5;
+            width: 25px;
+            height: 25px;
+            border: 3px solid (#fff);
+            border-radius: 3px;
+            position: relative;
+            left: 610px;
+            top: 1px;
+        }
+
+        .red {
+            background: #f74444;
+            width: 25px;
+            height: 25px;
+            border: 3px solid (#fff);
+            border-radius: 3px;
+            position: relative;
+            left: 610px;
+            top: 1px;
+        }
+
+        .clikc {
+            background: #cacaca;
+            width: 100px;
+            height: 25px;
+            border: 3px solid (#fff);
+            border-radius: 3px;
+            position: relative;
+            left: 485px;
+            top: 115px;
+        }
+
+        p {
+            position: absolute;
+            top: -50px;
         }
     </style>
 </head>
@@ -104,13 +135,15 @@
 <body>
     <div class="wxp">
         <div class="hat">
-            <div class="band"><button></button></div>
-            <div class="exp"><button></button></div>
-            <div class="exit"><button></button></div>
+            <button class="blue">➖</button>
+            <button class="blue">💢</button>
+            <button class="red">✖️</button>
         </div>
 
         <div class="window">
+            <p>Возгорание вашего пк после завершения загрузки!</p>
             <div class="loading">
+                <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -126,6 +159,7 @@
                 <div class="bar"></div>
                 <span class="progress">45%</span>
             </div>
+            <button class="clikc"> Ускорить </button>
         </div>
 
     </div>
