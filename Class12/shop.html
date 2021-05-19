@@ -6,6 +6,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop🛍</title>
+    <style>
+        .menu {}
+
+        .menu a {
+            text-emphasis: none;
+        }
+
+        .menu li {
+            position: relative;
+            list-style: none;
+        }
+
+
+
+        .menu_list {
+            display: flex;
+        }
+
+        .menu_list>li {
+            margin: 0px 10px 0px 0px;
+            background-color: #7ef3c6;
+        }
+
+        .menu_list>li:hover .sub_menu_list {
+            display: block;
+        }
+
+
+        .menu_link {
+            color: #003d1c;
+        }
+
+        /* level-2 */
+
+        .sub_menu_list {
+            display: none;
+            min-width: 300px;
+            position: absolute;
+            left: 0;
+            top: 10px;
+            padding: 20px 0px 0px 0px;
+        }
+
+        .sub_menu_list>li {
+            background-color: #98bff8;
+        }
+
+        .sub_menu_link {
+            color: #000;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+
+        .sub_menu_list>li:hover .sub_sub_menu_list {
+            display: block;
+        }
+
+        /* level-3 */
+
+        .sub_sub_menu_list {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            min-margin: 700px;
+            padding: 0px 0px 0px 5px;
+        }
+
+        .sub_sub_menu_list>li {
+            background-color: #f8f79e;
+        }
+
+        .sub_sub_menu_link {
+            color: #145301;
+            display: inline-block;
+            padding: 5px 10px;
+        }
+
+        /* arrow  */
+        /* 
+        .arrow {
+            width: 0px;
+            height: 0px;
+            border-top: 10px solid #000;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+        }
+
+        .menu_arrow {} 
+        */
+    </style>
 </head>
 
 <body>
@@ -14,129 +105,135 @@
     </header>
 
     <div class="window">
-        <nav>
-            <ul class="menu_list0">
+        <nav class="menu">
             <!-- 1/////////////////////////////////////////////////// -->
+            <ul class="menu_list">
                 <li>
-                    <a href="#" class="menu0">Смартфоны, ТВ и электроника </a>
-                    <ul class="menu_list1">
-                        <li><a href="#">Смартфоны, аксессуары</a>
-                        <ul class="menu_list1_0">
-                            <li><a href="#">Смартфоны</a></li>
-                            <li><a href="#">Смартфоны Apple</a></li>
-                            <li><a href="#">Умные часы</a></li>
-                            <li><a href="#">Чехлы, защитные стнкла для телефонов</a></li>
-                            <li><a href="#">Кабели для телефонов, планшетов</a></li>
-                        </ul>
-                        </li>
-                        <li><a href="#">Телевизоры, мониторы</a>
-                            <ul class="menu_list1_1">
-                                <li><a href="#">Телевизоры</a></li>
-                                <li><a href="#">Проекторы</a></li>
-                                <li><a href="#">Информационные, гостинечные дисплеи</a></li>
-                                <li><a href="#">Проекционные экраны</a></li>
-                                <li><a href="#">DVD, Blu-ray и медиаплееры</a></li>
+                    <a href="#" class="menu_link">Смартфоны, ТВ и электроника </a>
+                    <span class="menu_arrow arrow"></span>
+
+
+                    <ul class="sub_menu_list">
+                        <li>
+                            <a href="#" class="sub_menu_link">Смартфоны, аксессуары</a>
+                            <ul class="sub_sub_menu_list">
+
+
+                                <li><a href="#" class="sub_sub_menu_link">Смартфоны</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Смартфоны Apple</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Умные часы</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Чехлы, защитные стнкла для телефонов</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Кабели для телефонов, планшетов</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Планшеты, электронные книги</a>
-                            <ul class="menu_list1_2">
-                                <li><a href="#">Планшеты</a></li>
-                                <li><a href="#">Держатели, док-станции</a></li>
-                                <li><a href="#">Электронные книги</a></li>
-                                <li><a href="#">Портативные аккумуляторы</a></li>
-                                <li><a href="#">Элементы питания, зарядные устройства</a></li>
+                        <li><a href="#" class="sub_menu_link">Телевизоры, мониторы</a>
+                            <ul class="sub_sub_menu_list">
+                                <li><a href="#" class="sub_sub_menu_link">Телевизоры</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Проекторы</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Информационные, гостинечные дисплеи</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Проекционные экраны</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">DVD, Blu-ray и медиаплееры</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Игровая зона</a>
-                            <ul class="menu_list1_3">
-                                <li><a href="#">Консоли PlayStation</a></li>
-                                <li><a href="#">Игровые контроллеры</a></li>
-                                <li><a href="#">Игровые ноутбуки</a></li>
-                                <li><a href="#">Игровые компьютеры</a></li>
-                                <li><a href="#">Игры для Xbox</a></li>
+                        <li><a href="#" class="sub_menu_link">Планшеты, электронные книги</a>
+                            <ul class="sub_sub_menu_list">
+                                <li><a href="#" class="sub_sub_menu_link">Планшеты</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Держатели, док-станции</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Электронные книги</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Портативные аккумуляторы</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Элементы питания, зарядные устройства</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="sub_menu_link">Игровая зона</a>
+                            <ul class="sub_sub_menu_list">
+                                <li><a href="#" class="sub_sub_menu_link">Консоли PlayStation</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Игровые контроллеры</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Игровые ноутбуки</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Игровые компьютеры</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Игры для Xbox</a></li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-            <!-- 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                <!-- 1\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 
-            <!-- 2/////////////////////////////////////////////////// -->
+                <!-- 2/////////////////////////////////////////////////// -->
 
                 <li>
-                    <a href="#" class="menu1">Компютеры и переферия</a>
-                    <ul class="menu_list2">
-                        <li><a href="">Компьютерная техника</a>
-                        <ul>
-                            <li><a href="">Компьютеры</a></li>
-                            <li><a href="">Ноутбуки</a></li>
-                            <li><a href="">Планшеты</a></li>
-                            <li><a href="">Моноблоки</a></li>
-                            <li><a href="">Игровые компьютеры</a></li>
-                            <li><a href="">Игровые приставки</a></li>
-                        </ul>
+                    <a href="#" class="menu_link">Компютеры и переферия</a>
+                    <ul class="sub_menu_list">
+                        <li><a href="#" class="sub_menu_link">Компьютерная техника</a>
+                            <ul class="sub_sub_menu_list">
+                                <li><a href="#" class="sub_sub_menu_link">Компьютеры</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Ноутбуки</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Планшеты</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Моноблоки</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Игровые компьютеры</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Игровые приставки</a></li>
+                            </ul>
                         </li>
-                        <li><a href="">Компьютерная переферия</a>
-                        <ul>
-                            <li><a href="">Мониторы</a></li>
-                            <li><a href="">Веб-камеры</a></li>
-                            <li><a href="">Мышки и клавиатуры</a></li>
-                            <li><a href="">Зарядные, аккумуляторы</a></li>
-                            <li><a href="">Мультимедия акустика</a></li>
-                        </ul>
+                        <li><a href="#" class="sub_menu_link">Компьютерная переферия</a>
+                            <ul class="sub_sub_menu_list">
+                                <li><a href="#" class="sub_sub_menu_link">Мониторы</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Веб-камеры</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Мышки и клавиатуры</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Зарядные, аккумуляторы</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Мультимедия акустика</a></li>
+                            </ul>
                         </li>
-                        <li><a href="">Комплектующие</a>
-                        <ul>
-                            <li><a href="">Жесткий диск</a></li>
-                            <li><a href="">Системы охлаждения</a></li>
-                            <li><a href="">Оперативная память</a></li>
-                            <li><a href="">Корпуса для компьютерав</a></li>
-                            <li><a href="">Видеокарты</a></li>
-                            <li><a href="">Процессоры</a></li>
-                            <li><a href="">Компьютерные блоки питания</a></li>
-                            <li><a href="">Оптические приводы</a></li>
-                            <li><a href="">Материнские платы</a></li>
-                            <li><a href="">Аксессуары для корпусов ПК</a></li>
-                        </ul>
+                        <li><a href="" class="sub_menu_link">Комплектующие</a>
+                            <ul class="sub_sub_menu_list">
+                                <li><a href="#" class="sub_sub_menu_link">Жесткий диск</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Системы охлаждения</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Оперативная память</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Корпуса для компьютерав</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Видеокарты</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Процессоры</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Компьютерные блоки питания</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Оптические приводы</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Материнские платы</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Аксессуары для корпусов ПК</a></li>
+                            </ul>
                         </li>
-                        <li><a href="">Накопители данных</a>
-                        <ul>
-                            <li><a href="">USB Flash накопители</a></li>
-                            <li><a href="">Внешние HDD, SSD диски</a></li>
-                            <li><a href="">Картридоры</a></li>
-                        </ul>
+                        <li><a href="#" class="sub_menu_link">Накопители данных</a>
+                            <ul class="sub_sub_menu_list">
+                                <li><a href="#" class="sub_sub_menu_link">USB Flash накопители</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Внешние HDD, SSD диски</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Картридоры</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </li>
-            <!-- 2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+                <!-- 2\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
 
-            <!-- 3/////////////////////////////////////////////////// -->
+                <!-- 3/////////////////////////////////////////////////// -->
                 <li>
-                    <a href="#" class="menu2">Бытовая техника</a>
-                    <ul class="menu_list3">
-                        <li><a href="#">Крупная техника для кухни</a>
-                        <ul>
-                            <li><a href="">Холодильники</a></li>
-                            <li><a href="">Вытяжки</a></li>
-                            <li><a href="">Кухонные плиты</a></li>
-                            <li><a href="">Настольные плиты</a></li>
-                            <li><a href="">Посудомоечные машины</a></li>
-                            <li><a href="">Морозильники</a></li>
-                            <li><a href="">Винные шкафы</a></li>
-                        </ul>
+                    <a href="#" class="menu_link">Бытовая техника</a>
+                    <ul class="sub_menu_list">
+                        <li><a href="#" class="sub_menu_link">Крупная техника для кухни</a>
+                            <ul class="sub_sub_menu_list">
+                                <li><a href="#" class="sub_sub_menu_link">Холодильники</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Вытяжки</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Кухонные плиты</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Настольные плиты</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Посудомоечные машины</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Морозильники</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Винные шкафы</a></li>
+                            </ul>
                         </li>
-                        <li><a href="#">Климатическая техника</a>
-                        <ul>
-                            <li><a href="">Увлажнители, очистители воздуха</a></li>
-                            <li><a href="">Тепловые завесы</a></li>
-                            <li><a href="">Водонагреватели</a></li>
-                            <li><a href="">Обогреватели</a></li>
-                            <li><a href="">Вентеляторы вытяжные</a></li>
-                        </ul>
+                        <li><a href="#" class="sub_menu_link">Климатическая техника</a>
+                            <ul class="sub_sub_menu_list">
+                                <li><a href="#" class="sub_sub_menu_link">Увлажнители, очистители воздуха</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Тепловые завесы</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Водонагреватели</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Обогреватели</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Вентеляторы вытяжные</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Техника для дома</a></li>
+                                <li><a href="#" class="sub_sub_menu_link">Встраиваемая техника, оборудование</a></li>
                         </li>
-                        <li><a href="#">Техника для дома</a></li>
-                        <li><a href="#">Встраиваемая техника, оборудование</a></li>
                     </ul>
-                </li>
+            </ul>
+            </li>
             <!-- 3\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
             </ul>
         </nav>
