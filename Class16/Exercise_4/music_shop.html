@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
         body {
-            background: url(img/stars.png);
+            background: url(img/pattern7.png);
         }
 
         .head_box {
@@ -59,6 +61,81 @@
         }
 
         /* menu list */
+
+        .flex-container {
+            background-color: hsla(0, 0%, 0%, 0.666);
+            border: 1px solid #000;
+            margin: 15px 0px 20px 0px;
+            border-radius: 40px;
+            box-shadow: 0px 5px 10px #000;
+        }
+
+        .my_flex_block {}
+
+
+        .my_nav a {
+            position: relative;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .menu_list {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .sub_menu_list {
+            list-style: none;
+            display: block;
+        }
+
+        .menu_link {
+            font-family: 'Fredericka the Great', cursive;
+            color: #00ff00;
+            background-color: hsla(0, 0%, 0%, 0.777);
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px #000;
+            padding: 10px;
+        }
+
+        .menu_list {
+            position: relative;
+        }
+
+        .menu_link:hover {
+            color: #00ffd5;
+            box-shadow: 0px 5px 10px #00ffd5;
+        }
+
+        .sub_menu_link {
+            color: #fff;
+        }
+
+        .sub_menu_link:hover {
+            text-shadow: 0px 5px 10px #00ffd5;
+
+        }
+
+
+
+        .sub_menu_list {
+            display: none;
+            left: 0px;
+            top: 10px;
+            padding: 20px 0px 0px 0px;
+            position: relative;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .menu_list>li:hover .sub_menu_list {
+            display: block;
+
+        }
     </style>
 </head>
 
@@ -81,9 +158,10 @@
     </header>
 
     <main>
+
         <article>
 
-            <div class="my_list">
+            <div class="flex-container">
                 <nav class="my_nav">
                     <ul class="menu_list">
 
@@ -121,26 +199,26 @@
 
                     <li>
                         <a href="#" class="menu_link">Keyboards and Synths</a>
-                        <ul class="sub_sub_menu_list">
+                        <ul class="sub_menu_list">
                             <li>
                             <li>
-                                <a href="#" class="sub_sub_menu_link">Synths</a>
+                                <a href="#" class="sub_menu_link">Synths</a>
 
                             </li>
                             <li>
-                                <a href="#" class="sub_sub_menu_link">Digital Synths</a>
+                                <a href="#" class="sub_menu_link">Digital Synths</a>
 
                             </li>
                             <li>
-                                <a href="#" class="sub_sub_menu_link">Digital Pianos</a>
+                                <a href="#" class="sub_menu_link">Digital Pianos</a>
 
                             </li>
                             <li>
-                                <a href="#" class="sub_sub_menu_link">Modular Synths</a>
+                                <a href="#" class="sub_menu_link">Modular Synths</a>
 
                             </li>
                             <li>
-                                <a href="#" class="sub_sub_menu_link">Rackmount Synths</a>
+                                <a href="#" class="sub_menu_link">Rackmount Synths</a>
 
                             </li>
                     </li>
@@ -151,22 +229,22 @@
 
                     <li>
                         <a href="#" class="menu_link">Home Audio</a>
-                        <ul class="sub_sub_sub_menu_list">
+                        <ul class="sub_menu_list">
                             <li>
                             <li>
-                                <a href="#" class="sub_sub_sub_menu_link">Headphones</a>
+                                <a href="#" class="sub_menu_link">Headphones</a>
                             </li>
                             <li>
-                                <a href="#" class="sub_sub_sub_menu_link">Receivers</a>
+                                <a href="#" class="sub_menu_link">Receivers</a>
                             </li>
                             <li>
-                                <a href="#" class="sub_sub_sub_menu_link">Amplifiers</a>
+                                <a href="#" class="sub_menu_link">Amplifiers</a>
                             </li>
                             <li>
-                                <a href="#" class="sub_sub_sub_menu_link">Floor Speakers</a>
+                                <a href="#" class="sub_menu_link">Floor Speakers</a>
                             </li>
                             <li>
-                                <a href="#" class="sub_sub_sub_menu_link">Subwoofers</a>
+                                <a href="#" class="sub_menu_link">Subwoofers</a>
                             </li>
                     </li>
                     </ul>
@@ -176,22 +254,22 @@
 
                     <li>
                         <a href="#" class="menu_link">DJ and Lighting Gear</a>
-                        <ul class="s_sub_sub_menu_list">
+                        <ul class="sub_menu_list">
                             <li>
                             <li>
-                                <a href="#" class="s_sub_sub_menu_link">DJ Controllers</a>
+                                <a href="#" class="sub_menu_link">DJ Controllers</a>
                             </li>
                             <li>
-                                <a href="#" class="s_sub_sub_menu_link">Mixers</a>
+                                <a href="#" class="sub_menu_link">Mixers</a>
                             </li>
                             <li>
-                                <a href="#" class="s_sub_sub_menu_link">DJ Interfaces</a>
+                                <a href="#" class="sub_menu_link">DJ Interfaces</a>
                             </li>
                             <li>
-                                <a href="#" class="s_sub_sub_menu_link">Turntables</a>
+                                <a href="#" class="sub_menu_link">Turntables</a>
                             </li>
                             <li>
-                                <a href="#" class="s_sub_sub_menu_link">Lighting</a>
+                                <a href="#" class="sub_menu_link">Lighting</a>
                             </li>
                     </li>
                     </ul>
@@ -201,7 +279,6 @@
                 </nav>
             </div>
 
-        </article>
     </main>
 </body>
 
