@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bilbo&display=swap" rel="stylesheet" <link rel="preconnect"
+        href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 370px;
+            min-width: 370px;
+            background-color: rgba(0, 0, 0, 0.666);
+            position: relative;
+            color: rgb(0, 238, 255);
+            text-align: center;
+            height: 50px;
+        }
+
+        #check-menu {
+            display: none;
+        }
+
+        label {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            z-index: 2;
+            line-height: 40px;
+            font-family: 'Kaushan Script', cursive;
+            font-size: 35px;
+        }
+
+        label:hover {
+            box-shadow: 0px 5px 10px #2bff00;
+        }
+
+        .burger-line {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            width: 32px;
+            height: 2px;
+            background-color: #2bff00;
+            transition: .5s all;
+        }
+
+        .second,
+        .third {
+            top: 18px;
+        }
+
+        .fourth {
+            top: 28px;
+        }
+
+        .main-menu {
+            display: block;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            transform: translateY(100%);
+            max-height: 0;
+            font-size: 0;
+            overflow: hidden;
+            transition: .5s all;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            border-top: 1px solid #fff;
+            background-color: rgba(0, 0, 0, 0.666);
+            font-family: 'Bilbo', cursive;
+            font-size: 35px;
+        }
+
+        #check-menu:checked~.main-menu {
+            max-height: 500px;
+            font-size: 16px;
+        }
+
+        #check-menu:checked~.first {
+            display: none;
+        }
+
+        #check-menu:checked~.second {
+            transform: rotate(45deg);
+        }
+
+        #check-menu:checked~.third {
+            transform: rotate(-45deg);
+        }
+
+        #check-menu:checked~.fourth {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <input type="checkbox" id="check-menu">
+        <label for="check-menu">Menu</label>
+        <div class="burger-line first"></div>
+        <div class="burger-line second"></div>
+        <div class="burger-line third"></div>
+        <div class="burger-line fourth"></div>
+        <nav class="main-menu">
+            <a href="#">SpaceX</a>
+            <a href="#">SpaceX</a>
+            <a href="#">SpaceX</a>
+            <a href="#">SpaceX</a>
+            <a href="#">SpaceX</a>
+        </nav>
+    </div>
+</body>
+
+</html>
