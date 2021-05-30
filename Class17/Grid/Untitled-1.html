@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap" rel="stylesheet">
+    <title>Grid</title>
+    <style>
+        body {
+            background-color: #A29BFE;
+        }
+
+        /* 888888888888888____heder___8888888888888888888 */
+        .box-header {
+            position: absolute;
+            margin: 10px auto;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            background-color: #fff;
+            border-radius: 15px 15px 0px 0px;
+            max-width: 1440px;
+            max-height: 96px;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: baseline;
+            font-family: 'Padauk', sans-serif;
+        }
+
+        .my-logo {
+            position: relative;
+            background-image: url(img/logo-grid.png);
+            background-size: 31.5px 28.8px;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            width: 31.5px;
+            height: 28.8px;
+            top: 0px;
+            left: -154px;
+        }
+
+        b {
+            position: relative;
+            font-size: 48px;
+            left: -127px;
+
+        }
+
+        .my-link {
+            text-decoration: none;
+            margin: 20px;
+            font-size: 18px;
+            color: #6C5CE7;
+
+        }
+
+        .my-list {
+            position: relative;
+            display: inline-flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: baseline;
+            list-style: none;
+            font-size: 18px;
+            right: px;
+        }
+
+        .sing-in {
+            position: relative;
+            width: 170px;
+            height: 64px;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 100px;
+            color: #fff;
+            font-size: 24px;
+            background-color: rgba(45, 52, 54, 1);
+            right: -135px;
+        }
+
+        /* 888888888888888____heder___8888888888888888888 */
+
+        .content {
+            position: relative;
+            margin: 106px auto;
+            width: 1440px;
+            height: 1286px;
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+
+        .content::before {
+            content: "";
+            position: absolute;
+            top: 350px;
+            left: 670px;
+            display: block;
+            border-radius: 2px;
+            width: 1376.03px;
+            height: 767.91px;
+            background-color: rgba(255, 234, 167, 1);
+            border-radius: 99px;
+            transform: rotate(45deg);
+        }
+
+        .text-content {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            font-family: 'Padauk', sans-serif;
+        }
+
+        h1 {
+            font-size: 96px;
+            text-shadow: 0px 3px 0px #e4e4e4;
+        }
+
+        h2 {
+            font-size: 64px;
+            margin: 0px;
+            text-shadow: 0px 3px 0px #e4e4e4;
+        }
+
+        .fine {
+            color: rgba(255, 0, 242, 0.719);
+            text-shadow: 0px 3px 0px #e4e4e4;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="box-header">
+
+            <div class="my-logo"></div>
+
+            <div class="text-logo">
+                <p><b>Grid</b></p>
+            </div>
+
+            <div class="li-container">
+
+                <nav class="my-nav">
+
+                    <ul class="my-list">
+                        <li>
+                            <p><strong>How it works</strong></p>
+                        </li>
+
+                        <li><a href="" class="my-link">Who we are</a></li>
+
+                        <li><a href="" class="my-link">What we do</a></li>
+
+                        <li><a href="" class="my-link">Contact us</a></li>
+
+                        <li><input class="sing-in" type="submit" value="Sign In"></li>
+
+                    </ul>
+
+
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article>
+
+            <div class="content">
+
+                <div class="text-content">
+                    <h1>Combine <span class="fine">fine</span> images</h1>
+                    <h2>To represent a probuct</h2>
+                </div>
+
+            </div>
+
+        </article>
+
+    </main>
+
+</body>
+
+</html>
