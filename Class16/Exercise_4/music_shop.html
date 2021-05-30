@@ -5,14 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=1170">
+    <!-- viewport -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
         body {
             background: url(img/pattern7.png);
+            min-width: 1170px;
         }
 
         .head_box {
@@ -57,6 +63,7 @@
         .my_button:hover {
             color: #ff0000;
             box-shadow: 0px 5px 10px #ff0000;
+            transition: 0.5s;
 
         }
 
@@ -108,14 +115,17 @@
         .menu_link:hover {
             color: #00ffd5;
             box-shadow: 0px 5px 10px #00ffd5;
+            transition: 0.5s;
         }
 
         .sub_menu_link {
             color: #fff;
+            font-family: 'Metal Mania', cursive;
         }
 
         .sub_menu_link:hover {
-            text-shadow: 0px 5px 10px #00ffd5;
+            transition: 0.5s;
+            text-shadow: 0px 5px 10px #0800ff;
 
         }
 
@@ -136,6 +146,86 @@
             display: block;
 
         }
+
+        .my_search {
+            font-family: 'Metal Mania', cursive;
+            border-radius: 10px;
+            font-size: 25px;
+            background-color: rgba(0, 0, 0, 0.666);
+            color: #00ff00;
+        }
+
+        .my_search:hover {
+            box-shadow: 0px 5px 10px #0015ff;
+            transition: 0.5s;
+        }
+
+        .my_search:focus {
+            box-shadow: 0px 5px 10px #00ff00;
+            transition: 0.5s;
+        }
+
+        /* ____________article2_________ */
+
+        .check_container {
+            background-color: rgba(0, 0, 0, 0.666);
+            border: 1px solid #000;
+            border-radius: 20px;
+            box-shadow: 0px 5px 10px #000;
+            width: 20%;
+            padding: 10px;
+            display: block;
+        }
+
+        .my_label {
+            font-family: 'Metal Mania', cursive;
+            display: block;
+            font-size: 25px;
+            color: #004cffce;
+        }
+
+        .my_checkbox {
+            display: none;
+        }
+
+        .fake {
+            position: relative;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            border: 2px solid hsla(173, 100%, 50%, 0.476);
+            border-radius: 5px;
+
+        }
+
+        .fake:hover {
+            transition: .2s;
+            box-shadow: 0px 5px 10px #0015ff;
+        }
+
+        .fake::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            border-radius: 2px;
+            width: 12px;
+            height: 12px;
+            background-color: hsla(247, 100%, 50%, 0.777);
+            opacity: 0;
+            transition: .2s;
+        }
+
+        .my_checkbox:checked+.fake::before {
+            opacity: 1;
+        }
+
+        p {
+            font-size: 20px;
+            color: #00ffd5;
+        }
     </style>
 </head>
 
@@ -152,6 +242,14 @@
             </div>
             <div class="butt">
                 <a href="#" class="my_button">About us</a>
+            </div>
+            <div class="butt">
+                <form>
+                    <p>
+                        <input class="my_search" type="search" name="поиск" placeholder="Поиск по сайту">
+                        <input class="my_search" type="submit" value="🔎">
+                    </p>
+                </form>
             </div>
 
         </div>
@@ -278,6 +376,55 @@
                     </ul>
                 </nav>
             </div>
+        </article>
+
+        <article>
+            <div class="check_container">
+                <form action="#">
+                    <p><b>Выберете место проживания для подбора инструментов</b></p>
+                    <label class="my_label">
+                        <input class="my_checkbox" name="dzen" type="radio" value="mercuriy">
+                        <span class="fake"> </span>
+                        <span class="my_span">Меркурий</span>
+                    </label>
+                    <label class="my_label">
+                        <input class="my_checkbox" name="dzen" type="radio" value="venera">
+                        <span class="fake"> </span>
+                        <span class="my_span">Венера</span>
+                    </label>
+                    <label class="my_label">
+                        <input class="my_checkbox" name="dzen" type="radio" value="mars">
+                        <span class="fake"> </span>
+                        <span class="my_span">Марс</span>
+                    </label>
+                    <label class="my_label">
+                        <input class="my_checkbox" name="dzen" type="radio" value="jupiter">
+                        <span class="fake"> </span>
+                        <span class="my_span">Юпитер</span>
+                    </label>
+                    <label class="my_label">
+                        <input class="my_checkbox" name="dzen" type="radio" value="pluton">
+                        <span class="fake"> </span>
+                        <span class="my_span">Плутон</span>
+                    </label>
+                    <label class="my_label">
+                        <input class="my_checkbox" name="dzen" type="radio" value="land">
+                        <span class="fake"> </span>
+                        <span class="my_span">Земля</span>
+                    </label>
+                    <label class="my_label">
+                        <input class="my_checkbox" name="dzen" type="radio" value="minecraft">
+                        <span class="fake"> </span>
+                        <span class="my_span">Майнкрафт</span>
+                    </label>
+                    <label class="my_label">
+                        <input class="my_checkbox" name="dzen" type="radio" value="next">
+                        <span class="fake"> </span>
+                        <span class="my_span">Другое</span>
+                    </label>
+                </form>
+            </div>
+        </article>
 
     </main>
 </body>
