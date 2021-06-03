@@ -13,7 +13,7 @@
             background-color: #A29BFE;
         }
 
-        /* 888888888888888____heder___8888888888888888888 */
+        /* ===Heder===================================================================================== */
         .box-header {
             position: absolute;
             margin: 10px auto;
@@ -27,20 +27,18 @@
             display: inline-flex;
             flex-direction: row;
             justify-content: center;
-            align-items: baseline;
+            align-items: center;
             font-family: 'Padauk', sans-serif;
         }
 
         .my-logo {
             position: relative;
-            background-image: url(img/logo-grid.png);
-            background-size: 31.5px 28.8px;
+            /* background-size: 31.5px 28.8px; */
             background-position: 0px 0px;
             background-repeat: no-repeat;
             background-clip: border-box;
-            width: 31.5px;
-            height: 28.8px;
-            top: 0px;
+            width: 70px;
+            height: 64px;
             left: -154px;
         }
 
@@ -83,46 +81,58 @@
             right: -135px;
         }
 
-        /* 888888888888888____heder___8888888888888888888 */
+        /* ===Heder===================================================================================== */
+
+
+        /* ===Main===================================================================================== */
 
         .content {
-            position: relative;
-            margin: 106px auto;
+            position: absolute;
+            margin: 96px auto;
             width: 1440px;
             height: 1286px;
+            left: 0px;
+            right: 0px;
             background-color: #fff;
             border: 1px solid #000;
-        }
-
-        .content::before {
-            content: "";
-            position: absolute;
-            top: 350px;
-            left: 670px;
-            display: block;
-            border-radius: 2px;
-            width: 1376.03px;
-            height: 767.91px;
-            background-color: rgba(255, 234, 167, 1);
-            border-radius: 99px;
-            transform: rotate(45deg);
-        }
-
-        .text-content {
-            position: relative;
             display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
             font-family: 'Padauk', sans-serif;
         }
 
+        .box-content {
+            position: absolute;
+            right: 0px;
+        }
+
+        .box-text-content {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+
+        }
+
         h1 {
+            position: absolute;
+            /* margin: 0px auto; */
+            right: 0px;
+            left: 0px;
+            top: 30%;
             font-size: 96px;
             text-shadow: 0px 3px 0px #e4e4e4;
         }
 
         h2 {
+            position: relative;
+            /* margin: 0px auto; */
+            right: 0px;
+            left: 0px;
+            top: 400px;
             font-size: 64px;
             margin: 0px;
             text-shadow: 0px 3px 0px #e4e4e4;
@@ -132,6 +142,9 @@
             color: rgba(255, 0, 242, 0.719);
             text-shadow: 0px 3px 0px #e4e4e4;
         }
+
+
+        /* ===Main===================================================================================== */
     </style>
 
 </head>
@@ -141,7 +154,18 @@
     <header>
         <div class="box-header">
 
-            <div class="my-logo"></div>
+            <div class="my-logo">
+                <svg viewBox="0 0 70 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M47.25 17.6H22.75C20.817 17.6 19.25 19.0327 19.25 20.8V43.2C19.25 44.9673 20.817 46.4 22.75 46.4H47.25C49.183 46.4 50.75 44.9673 50.75 43.2V20.8C50.75 19.0327 49.183 17.6 47.25 17.6Z"
+                        stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M19.25 27.2H50.75" stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M29.75 46.4V27.2" stroke="#6C5CE7" stroke-width="3.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+            </div>
 
             <div class="text-logo">
                 <p><b>Grid</b></p>
@@ -178,10 +202,27 @@
 
             <div class="content">
 
-                <div class="text-content">
-                    <h1>Combine <span class="fine">fine</span> images</h1>
-                    <h2>To represent a probuct</h2>
+                <div class="box-content">
+                    <svg top="0px" width="801" height="753" viewBox="0 0 801 753" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="-41" y="251" width="1376.03" height="767.907" rx="99" transform="rotate(-45 -41 251)"
+                            fill="#FFEAA7" />
+
+                    </svg>
+
+
                 </div>
+
+                <div class="box-text-content">
+
+                    <div class="text-content">
+                        <h1>Combine<span class="fine"> fine </span>images</h1>
+
+                        <h2>To represent a probuct</h2>
+                    </div>
+
+                </div>
+
 
             </div>
 
