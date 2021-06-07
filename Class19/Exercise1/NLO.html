@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheel </title>
+    <style>
+
+        body{
+            background-image: url(img/sky.jpg);
+            background-size: 100% 740px;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            width: 100%;
+            height: 70%;
+            position: absolute;
+            margin: 10px auto;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-image: url(img/nlo.png);
+            background-size: 200px 70px;
+            background-position: 0px 0px;
+            background-repeat: no-repeat;
+            background-clip: border-box;
+            width: 200px;
+            height: 70px;
+            position: relative;
+
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes example {
+            0% {
+                transform: rotate(0deg);
+                left: 0px;
+                top: 0;
+            }
+
+            5% {
+                transform: rotate(5deg);
+                left: 0px;
+                top: 0px;
+            }
+
+            10% {
+                transform: rotate(15deg);
+                left: 700px;
+                top: 40px;
+            }
+
+            25% {
+                transform: rotate(0deg);
+                left: 700px;
+                top: 40px;
+            }
+
+            50% {
+                transform: rotate(-5deg);
+                left: 700px;
+                top: 40px;
+            }
+
+            75% {
+                transform: rotate(-10deg);
+                left: 700px;
+                top: 40px;
+            }
+
+            100% {
+                transform: rotate(0deg);
+                left: 0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div></div>
+
+</body>
+
+</html>
