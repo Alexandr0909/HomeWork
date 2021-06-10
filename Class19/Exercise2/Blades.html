@@ -7,11 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blades </title>
     <style>
-        body {
-           
-        }
-
-     .esp {
+        .block-sparco{
             width: 100px;
             height: 100px;
             background-image: url(img/esparco.png);
@@ -22,42 +18,26 @@
             width: 400px;
             height: 400px;
             position: relative;
+            transform: rotate(0deg);
+            transition: all 5s ease 0s;
 
-            animation-name: example;
-            animation-duration: 15s;
-            animation-iteration-count: infinite;
         }
 
-        @keyframes example {
-            0% {
-                transform: rotate(0deg);
-            }
-
-            5% {
-                transform: rotate(20deg);
-            }
-
-            10% {
-                transform: rotate(-20deg);
-            }
-            
-
-            50% {
-                transform: rotate(1080deg);
-            }
-
-
-            100% {
-                transform: rotate(-1080deg);
-                
-            }
+        div:hover {
+            transform: rotate(1080deg)
         }
+
+        div:focus {
+            transform: rotate(-1080deg)
+        }
+
+       
     </style>
 </head>
 
 <body>
-
-    <div class="esp"></div>
+        <div class="block-sparco"></div>
+    
 
 </body>
 
