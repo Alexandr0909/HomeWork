@@ -1,0 +1,51 @@
+p {
+  color: red;
+}
+
+header {
+  background-color: #8c00ff;
+  height: 20vh;
+  padding: 10px;
+}
+header .logo {
+  width: 80px;
+  height: 80px;
+}
+
+main {
+  background-color: #b60606;
+  height: 20vh;
+  padding: 10px;
+}
+main .logo {
+  width: 80px;
+  height: 80px;
+}
+main > div {
+  width: 250px;
+  height: 250px;
+}
+
+leftside {
+  background-color: rgba(0, 243, 81, 0.548);
+  height: 200px;
+  width: 200px;
+}
+
+rightside {
+  background-color: rgba(0, 17, 255, 0.466);
+  height: 200px;
+  width: 200px;
+}
+
+footer {
+  background-color: #06b606;
+  height: 20vh;
+  padding: 10px;
+}
+footer .logo {
+  width: 80px;
+  height: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */

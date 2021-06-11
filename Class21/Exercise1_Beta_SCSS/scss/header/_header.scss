@@ -1,0 +1,30 @@
+* {
+  margin: 0px auto;
+}
+header {
+  position: absolute;
+  background-color: #171a21;
+  width: 100%;
+  height: 100px;
+
+  .box-container {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px auto;
+    left: 30%;
+
+    .linck-box-nav {
+      color: #b8b6b4;
+      font-size: 16px;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    .linck-box-nav:hover{
+        color: #fff;
+    }
+  }
+}
