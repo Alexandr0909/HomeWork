@@ -24,22 +24,48 @@
       width: 80%;
       height: 30px;
      margin: 20px;
-      background-image: linear-gradient(80deg, #0290b388, #000049);
+      background-image: linear-gradient(80deg, #00c0f088, #00006388);
+      list-style: none;
     }
     .menu-link {
+      position: relative;
+      text-decoration: none;
+      color: #b8b6b4;
+      font-size: 18px;
+      top: 5px;
     }
 
     .sub-menu-list {
+      position: relative;
+      list-style: none;
+      background-image: linear-gradient(80deg, #00858f, #013a70);
+      width: 150px;
+      height: 120px;
+      padding: 10px;
+      top: 5px;
+      display: none;
     }
+
+    .sub-menu-list:hover {
+      display: block;
+    }
+
     .sub-menu-link {
+      text-decoration: none;
+      color: #000;
+      
     }
 
     .first-span {
+      color: #00b7ff;
     }
 
     .span-sub-menu-list {
+      list-style: none;
+      
     }
     .span-sub-menu-link {
+      text-decoration: none;
     }
 
     .sub-sub-menu-list {
