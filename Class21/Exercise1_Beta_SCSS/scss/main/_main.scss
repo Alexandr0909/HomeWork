@@ -8,5 +8,53 @@
     height: 837px;
     top: 100px;
     z-index: 0;
+
+    .menu-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .menu-list {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      width: 80%;
+      height: 30px;
+     margin: 20px;
+      background-image: linear-gradient(80deg, #0290b388, #000049);
+    }
+    .menu-link {
+    }
+
+    .sub-menu-list {
+    }
+    .sub-menu-link {
+    }
+
+    .first-span {
+    }
+
+    .span-sub-menu-list {
+    }
+    .span-sub-menu-link {
+    }
+
+    .sub-sub-menu-list {
+    }
+    .sub-sub-menu-link {
+    }
+
+    .sub-sub-menu-list {
+    }
+    .sub-sub-menu-link {
+    }
+
+    .three-sub-menu-list {
+    }
+    .three-sub-menu-link {
+    }
   }
 }

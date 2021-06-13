@@ -18,7 +18,9 @@ header .box-container {
   left: 25%;
 }
 header .box-container .logo {
+  position: fixed;
   z-index: 2;
+  top: 20px;
 }
 header .box-container nav {
   position: fixed;
@@ -88,6 +90,22 @@ header .box-container a:hover {
   height: 837px;
   top: 100px;
   z-index: 0;
+}
+* main .menu-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+* main .menu-list {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 80%;
+  height: 30px;
+  margin: 20px;
+  background-image: linear-gradient(80deg, #0290b388, #000049);
 }
 
 /*# sourceMappingURL=style.css.map */
