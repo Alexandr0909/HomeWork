@@ -84,62 +84,68 @@ header .box-container a:hover {
   margin: 0px auto;
 }
 * main {
-  position: absolute;
+  position: relative;
   background-image: linear-gradient(80deg, #004c5f, #000031);
   width: 100%;
   height: 837px;
   top: 100px;
   z-index: 0;
 }
-* main .menu-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-* main .menu-list {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  width: 80%;
-  height: 30px;
-  margin: 20px;
-  background-image: linear-gradient(80deg, #00c0f088, #00006388);
-  list-style: none;
-}
-* main .menu-link {
-  position: relative;
+* main .menu a {
   text-decoration: none;
-  color: #b8b6b4;
-  font-size: 18px;
-  top: 5px;
 }
-* main .sub-menu-list {
+* main .menu li {
   position: relative;
   list-style: none;
-  background-image: linear-gradient(80deg, #00858f, #013a70);
-  width: 150px;
-  height: 120px;
-  padding: 10px;
-  top: 5px;
-  display: none;
 }
-* main .sub-menu-list:hover {
+* main .menu_list {
+  display: flex;
+}
+* main .menu_list > li {
+  margin: 0px 30px 0px 0px;
+}
+* main .menu_list > li:hover .sub_menu_list {
   display: block;
 }
-* main .sub-menu-link {
-  text-decoration: none;
-  color: #000;
+* main .menu_link {
+  color: #fff;
+  font-size: 19px;
 }
-* main .first-span {
-  color: #00b7ff;
+* main .sub_menu_list {
+  min-width: 300px;
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 20;
+  padding: 20px 0px 0px 0px;
 }
-* main .span-sub-menu-list {
-  list-style: none;
+* main .sub_menu_list > li {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-* main .span-sub-menu-link {
-  text-decoration: none;
+* main .sub_menu_list > li:hover .sub_sub_menu_list {
+  display: block;
+}
+* main .sub_menu_link {
+  color: #c4c4c4;
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+* main .sub_sub_menu_list {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  min-width: 300px;
+  padding: 0px 0px 0px 5px;
+}
+* main .sub_sub_menu_link {
+  color: #fff;
+  display: inline-block;
+  padding: 5px 10px;
+}
+* main .sub_sub_menu_list > li {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*# sourceMappingURL=style.css.map */
