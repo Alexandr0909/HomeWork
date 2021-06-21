@@ -1,14 +1,20 @@
 * {
   margin: 0px auto;
 }
-
-header {
+* body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+* header {
   position: absolute;
   background-color: #171a21;
   width: 100%;
   height: 100px;
+  left: 0;
+  right: 0;
 }
-header .box-container {
+* header .box-container {
   position: relative;
   display: inline-flex;
   flex-direction: row;
@@ -17,12 +23,12 @@ header .box-container {
   margin: 25px auto;
   left: 25%;
 }
-header .box-container .logo {
+* header .box-container .logo {
   position: fixed;
   z-index: 2;
   top: 20px;
 }
-header .box-container nav {
+* header .box-container nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,26 +36,22 @@ header .box-container nav {
   background-color: #171a21;
   z-index: 1;
 }
-header .box-container nav ul {
+* header .box-container nav ul {
   list-style: none;
   position: relative;
   float: right;
   margin-right: 25%;
   display: inline-table;
 }
-header .box-container nav ul li {
+* header .box-container nav ul li {
   float: left;
   transition: all 0.2s ease-in-out;
 }
-header .box-container nav ul li:hover > ul {
+* header .box-container nav ul li:hover > ul {
   display: block;
   box-shadow: 5px 5px 5px;
 }
-header .box-container nav ul li {
-  float: left;
-  transition: all 0.2s ease-in-out;
-}
-header .box-container nav ul li a {
+* header .box-container nav ul li a {
   display: block;
   padding: 35px 20px;
   font-size: 0.9em;
@@ -58,60 +60,64 @@ header .box-container nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
 }
-header .box-container nav ul ul {
+* header .box-container nav ul ul {
   display: none;
   background-color: #171a21;
   position: absolute;
   top: 100%;
 }
-header .box-container nav ul ul li {
+* header .box-container nav ul ul li {
   float: none;
   position: relative;
 }
-header .box-container nav ul ul li a {
+* header .box-container nav ul ul li a {
   padding: 15px 30px;
 }
-header .box-container nav ul ul ul {
+* header .box-container nav ul ul ul {
   position: absolute;
   left: 100%;
   top: 0;
 }
-header .box-container a:hover {
+* header .box-container a:hover {
   color: #fff;
   text-shadow: 0px 10px 10px #1100ff;
   transition: 0.3s;
 }
 
 * {
-  margin: 0px auto;
+  margin: 0;
+  padding: 0;
 }
 * main {
   position: relative;
-  background-image: linear-gradient(80deg, #004c5f, #000031);
+  background-image: linear-gradient(#2a475e, #1b2838);
   width: 100%;
-  height: 837px;
+  height: 820px;
   top: 100px;
   z-index: 0;
+  left: 0;
+  right: 0;
 }
 * main .menu {
   position: relative;
   background-image: linear-gradient(80deg, #00a3cca2, #01017c7a);
-  width: 90%;
+  width: 60%;
   height: 30px;
   top: 30px;
+  left: 20%;
   border-radius: 10px 10px 0px 0px;
-}
-* main .menu a {
-  text-decoration: none;
 }
 * main .menu li {
   position: relative;
   list-style: none;
 }
-* main .menu_list {
+* main .menu li a {
+  text-decoration: none;
+}
+* main .menu .menu_list {
   display: flex;
 }
-* main .menu_list > li {
+* main .menu .menu_list > li {
   margin: 4px 30px 0px 0px;
 }
 * main .menu_list > li:hover .sub_menu_list {
@@ -134,9 +140,10 @@ header .box-container a:hover {
   left: 0px;
   top: 20;
   padding: 20px 0px 0px 0px;
+  z-index: 3;
 }
 * main .sub_menu_list > li {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 * main .sub_menu_list > li:hover .sub_sub_menu_list {
   display: block;
@@ -175,7 +182,7 @@ header .box-container a:hover {
   font-size: 20px;
 }
 * main .sub_sub_menu_list > li {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 * main .three_sub_menu_list {
   display: none;
@@ -184,7 +191,7 @@ header .box-container a:hover {
   left: 100%;
   min-width: 300px;
   padding: 0px 0px 0px 5px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 * main .sub_sub_menu_list > li:hover .three_sub_menu_list {
   display: block;
@@ -203,22 +210,165 @@ header .box-container a:hover {
   font-size: 20px;
 }
 * main .input-menu {
-  background-image: linear-gradient(80deg, #00a3ccf6, #01017c);
+  background: rgba(0, 0, 0, 0.666);
   border: none;
-  border-radius: 10px;
+  border-radius: 10px 0px 0px 10px;
   width: 200px;
-  height: 30px;
+  height: 26px;
   color: #fff;
 }
 * main .text-input {
-  background-image: linear-gradient(80deg, #00a3cca2, #000072);
+  background-image: linear-gradient(80deg, #000, #02028aea);
   border: none;
-  border-radius: 10px;
+  border-radius: 0px 10px 10px 0px;
   width: 40px;
-  height: 25px;
+  height: 29px;
 }
 * main .text-input:hover {
   box-shadow: 0px 0px 5px 2px #00ff80;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+* .wrapper {
+  height: 350px;
+  margin: 100px auto 0;
+  position: relative;
+  width: 700px;
+}
+* .wrapper .slider {
+  background-color: #ddd;
+  height: inherit;
+  overflow: hidden;
+  position: relative;
+  width: inherit;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0px 10px 15px #000;
+}
+* .wrapper > input {
+  display: none;
+}
+* .slides {
+  height: inherit;
+  position: absolute;
+  width: inherit;
+}
+* .slide1 {
+  background-image: url("http://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6");
+  background-size: cover;
+}
+* .slide2 {
+  background-image: url("https://i.blogs.es/c05dc6/mortal/1366_2000.jpeg");
+  background-size: cover;
+}
+* .slide3 {
+  background-image: url(https://cdn.igromania.ru/mnt/news/3/2/1/1/c/3/84496/detail/ccc1f312b35e067b_848x477.jpg);
+  background-size: cover;
+}
+* .slide4 {
+  background-image: url(https://lh3.googleusercontent.com/proxy/52i5bcL0LjATc_w8j4YaO3EsjbyOL8uD-9tZvfl56RBnC79kWSM_9kIbjKdZhEFFgng2zgz0ZmMf9uzu337SxSFpTYI_8iYr7Op4H9fFotrozAAHy3ZGtp5uF5HpE-OyPdANM9U);
+  background-size: cover;
+}
+* .slide5 {
+  background-image: url(https://news.xbox.com/ru-ru/wp-content/uploads/sites/9/2021/06/ForzaHorizon5_613_HERO.jpg?fit=1920%2C1080);
+  background-size: cover;
+}
+* .wrapper .controls {
+  left: 50%;
+  margin-left: -98px;
+  position: absolute;
+}
+* .wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 8px;
+  border-radius: 50%;
+}
+* .wrapper label:after {
+  border: 2px solid #ddd;
+  content: " ";
+  display: block;
+  height: 12px;
+  left: -4px;
+  position: absolute;
+  top: -4px;
+  width: 30px;
+  border-radius: 50%;
+}
+* .wrapper label {
+  cursor: pointer;
+  display: inline-block;
+  height: 8px;
+  margin: 25px 12px 0 16px;
+  position: relative;
+  width: 25px;
+  border-radius: 50%;
+  transition: background ease-in-out 0.5s;
+}
+* .wrapper label:hover,
+* #slide1:checked ~ .controls label:nth-of-type(1),
+* #slide2:checked ~ .controls label:nth-of-type(2),
+* #slide3:checked ~ .controls label:nth-of-type(3),
+* #slide4:checked ~ .controls label:nth-of-type(4),
+* #slide5:checked ~ .controls label:nth-of-type(5) {
+  background: #ddd;
+}
+* .slides {
+  height: inherit;
+  opacity: 0;
+  position: absolute;
+  width: inherit;
+  z-index: 0;
+  transform: scale(1.5);
+}
+* #slide1:checked ~ .slider > .slide1,
+* #slide2:checked ~ .slider > .slide2,
+* #slide3:checked ~ .slider > .slide3,
+* #slide4:checked ~ .slider > .slide4,
+* #slide5:checked ~ .slider > .slide5 {
+  opacity: 1;
+  z-index: 1;
+  transform: scale(1);
+}
+* h1 {
+  color: #fff;
+}
+
+footer {
+  position: absolute;
+  padding: 15px;
+  background-color: #171a21;
+  width: 100%;
+  height: auto;
+  top: 100%;
+  z-index: 2;
+}
+footer a {
+  text-decoration: none;
+  color: #cac9c9;
+}
+footer .footer_text {
+  padding: 5px;
+  color: #828282;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contacts__logo {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.valve_links {
+  text-align: center;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    .wrapper {
+        height: 350px;
+        margin: 100px auto 0;
+        position: relative;
+        width: 700px;
+
+        .slider {
+            background-color: #ddd;
+            height: inherit;
+            overflow: hidden;
+            position: relative;
+            width: inherit;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0px 10px 15px #000;
+        }
+    }
+    .wrapper > input {
+        display: none;
+    }
+
+    .slides {
+        height: inherit;
+        position: absolute;
+        width: inherit;
+    }
+
+    .slide1 {
+        background-image: url("http://media.steampowered.com/apps/csgo/blog/images/fb_image.png?v=6");
+        background-size: cover;
+    }
+    .slide2 {
+        background-image: url("https://i.blogs.es/c05dc6/mortal/1366_2000.jpeg");
+        background-size: cover;
+    }
+    .slide3 {
+        background-image: url(https://cdn.igromania.ru/mnt/news/3/2/1/1/c/3/84496/detail/ccc1f312b35e067b_848x477.jpg);
+        background-size: cover;
+    }
+    .slide4 {
+        background-image: url(https://lh3.googleusercontent.com/proxy/52i5bcL0LjATc_w8j4YaO3EsjbyOL8uD-9tZvfl56RBnC79kWSM_9kIbjKdZhEFFgng2zgz0ZmMf9uzu337SxSFpTYI_8iYr7Op4H9fFotrozAAHy3ZGtp5uF5HpE-OyPdANM9U);
+        background-size: cover;
+    }
+    .slide5 {
+        background-image: url(https://news.xbox.com/ru-ru/wp-content/uploads/sites/9/2021/06/ForzaHorizon5_613_HERO.jpg?fit=1920%2C1080);
+        background-size: cover;
+    }
+
+    .wrapper .controls {
+        left: 50%;
+        margin-left: -98px;
+        position: absolute;
+    }
+
+    .wrapper label {
+        cursor: pointer;
+        display: inline-block;
+        height: 8px;
+        margin: 25px 12px 0 16px;
+        position: relative;
+        width: 8px;
+        border-radius: 50%;
+    }
+
+    .wrapper label:after {
+        border: 2px solid #ddd;
+        content: " ";
+        display: block;
+        height: 12px;
+        left: -4px;
+        position: absolute;
+        top: -4px;
+        width: 30px;
+        border-radius: 50%;
+    }
+    .wrapper label {
+        cursor: pointer;
+        display: inline-block;
+        height: 8px;
+        margin: 25px 12px 0 16px;
+        position: relative;
+        width: 25px;
+        border-radius: 50%;
+        transition: background ease-in-out 0.5s;
+    }
+
+    .wrapper label:hover,
+    #slide1:checked ~ .controls label:nth-of-type(1),
+    #slide2:checked ~ .controls label:nth-of-type(2),
+    #slide3:checked ~ .controls label:nth-of-type(3),
+    #slide4:checked ~ .controls label:nth-of-type(4),
+    #slide5:checked ~ .controls label:nth-of-type(5) {
+        background: #ddd;
+    }
+
+    .slides {
+        height: inherit;
+        opacity: 0;
+        position: absolute;
+        width: inherit;
+        z-index: 0;
+        transform: scale(1.5);
+    }
+
+    #slide1:checked ~ .slider > .slide1,
+    #slide2:checked ~ .slider > .slide2,
+    #slide3:checked ~ .slider > .slide3,
+    #slide4:checked ~ .slider > .slide4,
+    #slide5:checked ~ .slider > .slide5 {
+        opacity: 1;
+        z-index: 1;
+        transform: scale(1);
+    }
+    h1 {
+        color: #fff;
+    }
+}
