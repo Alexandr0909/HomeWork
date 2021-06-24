@@ -1,0 +1,121 @@
+* {
+  margin: 0px;
+}
+* .model-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  grid-template-rows: 470px 470px;
+  grid-auto-rows: minmax(196px, auto);
+  grid-gap: 0px;
+  background-color: rgba(0, 0, 0, 0.444);
+  font-family: "Noto Sans KR", sans-serif;
+}
+* .model-box .car-box {
+  background-color: rgba(0, 0, 0, 0.555);
+  color: #fff;
+  text-align: left;
+}
+* .model-box .car-box h1 {
+  margin: 25px 50px;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+* .model-box .car-718 {
+  background-image: url(/img/porsche-718.webp);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+* .model-box .car-718:hover {
+  background-size: 105% 105%;
+  transition: 0.6s;
+}
+* .model-box .car-911 {
+  background-image: url(/img/porsche-911.webp);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+* .model-box .car-911:hover {
+  background-size: 105% 105%;
+  transition: 0.6s;
+}
+* .model-box .car-taycan {
+  background-image: url(/img/porsche-taycan.webp);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+* .model-box .car-taycan:hover {
+  background-size: 105% 105%;
+  transition: 0.6s;
+}
+* .model-box .car-panamera {
+  background-image: url(/img/porsche-panamera.webp);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+* .model-box .car-panamera:hover {
+  background-size: 105% 105%;
+  transition: 0.6s;
+}
+* .model-box .car-macan {
+  background-image: url(/img/porsche-macan.webp);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+* .model-box .car-macan:hover {
+  background-size: 105% 105%;
+  transition: 0.6s;
+}
+* .model-box .car-cayenne {
+  background-image: url(/img/porsche-cayenne.webp);
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+* .model-box .car-cayenne:hover {
+  background-size: 105% 105%;
+  transition: 0.6s;
+}
+
+.all-mod {
+  position: absolute;
+  margin: 300px 50px;
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 50px;
+  grid-gap: 35px;
+  text-align: center;
+}
+.all-mod .button-model {
+  width: 150px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #000;
+  padding: 10px;
+}
+.all-mod .button-model:hover {
+  background-color: #ff0000;
+  border: 1px solid #ff0000;
+  color: #fff;
+  transition: 0.4s;
+}
+.all-mod .button-all-model {
+  width: 120px;
+  margin: 0px 5px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #000;
+  color: #fff;
+  padding: 10px;
+}
+.all-mod .button-all-model:hover {
+  border: 1px solid #ff0000;
+  color: #ff0000;
+  transition: 0.4s;
+}
+
+/*# sourceMappingURL=style.css.map */
