@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let obj = {
+            a: 1,
+            b: 2,
+            c: 3,
+        }
+        for (let prop in odj)
+            console.log(prop + "- " + obj[prop])
+        console.log(odj["c"])
+        console.log(odj.c)
+
+
+        let city = {
+            name: "New York",
+            population: "8,336,817"
+        }
+        console.log(city)
+
+        let city = {
+            Grodno: " 357 878",
+            Minsk: " 1 929 300",
+            Gomel: " 522 300 ",
+            Brest: " 330 944 ",
+            Mogilev: " 371 318",
+            Vitebsk: " 371 681",
+        }
+        console.log(city)
+
+
+
+        let city = {
+            Grodno: " 357 878.",
+            Minsk: " 1 929 300.",
+            Gomel: " 522 300.",
+            Brest: " 330 944.",
+            Mogilev: " 371 318.",
+            Vitebsk: " 371 681.",
+        }
+        function i(city) {
+            for (let a in city)
+                console.log(a + ": " + city[a])
+        }
+    </script>
+</body>
+
+</html>
