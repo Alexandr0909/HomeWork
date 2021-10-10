@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormsJS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Формы JS</h1>
+
+    <form name="reg">
+        <p><input name="user" value="" />
+
+        <p><input name="sex" type="radio" checked />М 🧔
+            <input name="sex" type="radio" />Ж 👩‍🦰
+
+        <p>Город: <select name="city">
+                <option>Moscow</option>
+                <option>St. Petersburg</option>
+                <option>Tver</option>
+            </select>
+
+        <fieldset name="info"> <!-- Подформа -->
+            <p>Согласие <input name="agree" type="checkbox" />
+            <p><textarea name="about" cols="30" rows="10">О себе</textarea>
+        </fieldset>
+
+        <p><input type="submit" name="submit">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

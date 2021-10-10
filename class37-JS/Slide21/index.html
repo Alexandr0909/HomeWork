@@ -11,47 +11,202 @@
 <body>
     <script>
 
-        let obj = {
-            a: 1,
-            b: 2,
-            c: 3,
+        // let obj = {
+        //     a: 1,
+        //     b: 2,
+        //     c: 3,
+        // }
+        // for (let prop in odj)
+        //     console.log(prop + "- " + obj[prop])
+        // console.log(odj["c"])
+        // console.log(odj.c)
+
+
+        // let city = {
+        //     name: "New York",
+        //     population: "8,336,817"
+        // }
+        // console.log(city)
+
+        // let city = {
+        //     Grodno: " 357 878",
+        //     Minsk: " 1 929 300",
+        //     Gomel: " 522 300 ",
+        //     Brest: " 330 944 ",
+        //     Mogilev: " 371 318",
+        //     Vitebsk: " 371 681",
+        // }
+        // console.log(city)
+
+
+
+        // let city = {
+        //     Grodno: " 357 878.",
+        //     Minsk: " 1 929 300.",
+        //     Gomel: " 522 300.",
+        //     Brest: " 330 944.",
+        //     Mogilev: " 371 318.",
+        //     Vitebsk: " 371 681.",
+        // }
+        // function i(city) {
+        //     for (let a in city)
+        //         console.log(a + ": " + city[a])
+        // }
+
+
+
+
+        // CLASS WORK
+
+
+        //     function cirecleLength(r) {
+        //         // r = 20;
+        //         console.log(r);
+        //         return 2 * Math.PI * r.radius
+
+
+
+        //     }
+
+
+
+        //    let b = {radius:10}
+        //     console.log(cirecleLength({radius:10}));
+        //     // console.log({ b });
+
+        // let cA = {
+        //     x: 24,
+        //     y: 36,
+        //     d: 12
+        // };
+        // let cB = {};
+        // for (let key in cA) {
+        //     cB[key] = cA[key];
+        //     console.log(key, cA[key]);
+        // }
+
+
+        // let city = {
+        //     Grodno: " 357 878.",
+        //     Minsk: " 1 929 300.",
+        //     Gomel: " 522 300.",
+        //     Brest: " 330 944.",
+        //     Mogilev: " 371 318.",
+        //     Vitebsk: " 371 681.",
+        // }
+        // function i(city) {
+        //     for (let a in city)
+        //         console.log(a + ": " + city[a])
+        // }
+
+
+
+
+
+
+
+
+        // ########
+
+        // function aboutYou(yourName, yourAge, whereLive, yorColor) {
+
+        //     let yourName = (prompt("Введите ваше имя"));
+        //     if (isText(yourName)) {
+        //         a = (prompt("Введите год второй раз!"));
+        //     }
+        // }
+
+
+
+        // function rand() {
+        //       let random = []
+        //       for (let i=0;i<=20;i++){
+        //     random.push(Math.round((Math.random()*49+1)))
+        //       }
+        // return random
+        // }
+
+
+        // function rand(a, b, c) {
+        //     let random = []
+        //     for (let i = 0; i <= a; i++) {
+        //         random.push(Math.round((Math.random() * (c - b) + b)))
+        //     }
+        //     return random
+        // }
+        // rand(10, 1, 5)
+
+        // Задача 3 слайд 30
+
+        function ind(url = "https://www.bmw.com/en/index.html") {
+            if (url.indexOf("http://")===0 && url.lastIndexOf(".html")===-5 ) {
+                return true;
+            }
+            else
+                return false;
         }
-        for (let prop in odj)
-            console.log(prop + "- " + obj[prop])
-        console.log(odj["c"])
-        console.log(odj.c)
+        console.log(ind());
+
+        // Задача 4 - 5 слайд 31
+
+        // function strokaa() {
+        //     let stroka = "привет как твои дела что делаешь а что будет завтра";
+        //     console.log(stroka.split("а").length - 1);
+        //     console.log(stroka.split("А").length - 1);
+        // }
+        // console.log(strokaa())
 
 
-        let city = {
-            name: "New York",
-            population: "8,336,817"
+
+        // Задача 6 слайд 31
+
+        // let now = new Date();
+        // now.getDate();
+        // console.log(now);
+
+
+        // Вариант 2 :DD
+        // let now = new Date().toLocaleDateString();
+        // console.log(now)
+
+
+        // Задача 7 слайд 31
+
+        // function mill() {
+        //     console.log(Date.now());
+        // }
+        // mill();
+
+
+
+
+
+
+        function f1() {
+            debugger;
+
+            randomRange = (x, y) => Math.floor(Math.random() * (y - x + 1) + x);
+
+            getarr = () => {
+                let arr = [];
+                for (let i = 0; i < 20; i++) arr.push(randomRange(10, 19));
+                return arr;
+            };
+
+            let counter = {};
+
+            for (let j = 0; j < 1000; j++) {
+                let arr = getarr();
+
+                for (let i = 0; i < arr.length; i++)
+                    counter[arr[i]] = (counter[arr[i]] ? counter[arr[i]] : 0) + 1;
+            }
+
+            console.log(counter);
         }
-        console.log(city)
-
-        let city = {
-            Grodno: " 357 878",
-            Minsk: " 1 929 300",
-            Gomel: " 522 300 ",
-            Brest: " 330 944 ",
-            Mogilev: " 371 318",
-            Vitebsk: " 371 681",
-        }
-        console.log(city)
+        f1()
 
 
-
-        let city = {
-            Grodno: " 357 878.",
-            Minsk: " 1 929 300.",
-            Gomel: " 522 300.",
-            Brest: " 330 944.",
-            Mogilev: " 371 318.",
-            Vitebsk: " 371 681.",
-        }
-        function i(city) {
-            for (let a in city)
-                console.log(a + ": " + city[a])
-        }
     </script>
 </body>
 
